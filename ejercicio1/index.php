@@ -1,7 +1,33 @@
 <?php
-/**
- * Problema propuesto.
- * Mostrar la tabla de multiplicar del 2. Emplear el for, luego el while y por último el do/while.
- * La estructura for permite incrementar una variable de 2 en 2
- */
+    //bucles
+    
+    $i=1;
+    
+    echo "bucle for" . "<br>";
+    for($i; $i<=12; $i++)
+    {
+        echo "2"."*".$i."=".$i*2 ."<br>";
+    }
+    
+    //while
+    $i = 1;
+    echo "bucle while". "<br>";
+    while($i<=12)
+    {
+        
+        echo "2"."*".$i."=".$i*2 ."<br>";
+        $i++;
+    }
+
+    echo "bucle do while" ."<br>";
+    $i=1;
+    do
+    {
+        echo "2"."*".$i."=".$i*2 ."<br>";
+        $i++;
+    }
+    while($i <= 12)
+ 
+
+
 ?>
