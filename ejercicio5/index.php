@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  Sabiendo que la función rand nos retorna un valor aleatorio entre un rango de dos enteros:
 
 $num=rand(1,100);
