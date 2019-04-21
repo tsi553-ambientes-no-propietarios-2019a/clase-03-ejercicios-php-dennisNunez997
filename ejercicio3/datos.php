@@ -14,15 +14,11 @@
     foreach($usuario as $user => $pass)
     {
         //echo $user . "=>" . $pass . "<br>";
-        if(($nombre != $user) && ($contraseña != $pass))
-        { 
-            echo "contraseña incorrecta";
-            break;
-        }
-        else
+        if($nombre == $user && $contraseña == $pass)
         {
-            echo $nombre;
-            break;
+            echo $user . " contraseña: " . $pass;
         }
+        
+        
     }
 ?>
