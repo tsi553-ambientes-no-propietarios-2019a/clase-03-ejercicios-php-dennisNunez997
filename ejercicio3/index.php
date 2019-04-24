@@ -19,7 +19,7 @@
   <body>   
 
     <div class = "container">
-        <h1 class = 'page-header'>mi primer formulario</h1>
+        <h1 class = 'page-header'>primer formulario</h1>
         <form action = "datos.php" method = "POST"> 
             <div class = "form-group">
                 <label>Nombre de usuario</label>
