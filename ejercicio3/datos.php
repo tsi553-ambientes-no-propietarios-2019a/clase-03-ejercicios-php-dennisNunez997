@@ -2,23 +2,31 @@
 
     $usuario =
     [
-        'Pedro' => 1726062829,
-        'Juan' => 10291837,
-        'Ana' => 928472,
-        'Luisa' => 932087
+        'Pedro' => '123123',
+        'Juan' => 'qweqwe',
+        'Ana' => '321321',
+        'Luisa' => 'asdasd'
     ];
     
     $nombre = $_POST["nombre"];
-    $contraseña = $_POST["password"];
-
+    $contrasena = $_POST["password"];
+    $user_found = false;
     foreach($usuario as $user => $pass)
     {
         //echo $user . "=>" . $pass . "<br>";
-        if($nombre == $user && $contraseña == $pass)
+        if($nombre == $user && $contrasena == $pass)
         {
             echo $user . " contraseña: " . $pass;
+            $user_found= true;
+            break;
         }
-        
-        
     }
+
+    if(!$user_found){
+                echo "usuario y contraseña incorrecto";
+                break;
+
+    } 
+
+
 ?>
